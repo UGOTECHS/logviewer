@@ -1,0 +1,20 @@
+[2026-01-05 10:00:00].000 W/ActivityManager(  600): Start proc 1200:com.xcr.singleapp.wpay/u0a101 for broadcast {com.xcr.singleapp.wpay/crc6402cde6085f70f513.BootReceiver}
+[2026-01-05 10:00:01].000 W/XINFOR  ( 1200): vQA_9.9.9 MainActivity.cs:583 App background image applied: /data/x.jpg
+[2026-01-05 10:00:02].000 W/XINFOR  ( 1200): vQA_9.9.9 DroidLogUploadSchedule.cs:141 Network event: Available
+[2026-01-05 09:58:00].000 W/HwBinder:380_1(  380): type=1400 audit(0.0:2773): avc: denied { read } for name="x"
+[2026-01-05 10:00:03].000 W/XINFOR  ( 1200): vQA_9.9.9 DroidLogUploadSchedule.cs:141 Network event: CapabilitiesChanged
+[2026-01-05 10:00:04].000 W/XINFOR  ( 1200): vQA_9.9.9 DroidLogUploadSchedule.cs:206 starting UploadLogs......
+[2026-01-05 10:00:05].000 W/XINFOR  ( 1200): vQA_9.9.9 DroidLogUploadSchedule.cs:280 [52001844_2026-01-05_100000_000.zip] has been uploaded
+[2026-01-05 10:00:06].000 W/XINFOR  ( 1200): vQA_9.9.9 DroidLogUploadSchedule.cs:470 DroidLogUploadSchedule: Connected successfully
+[2026-01-05 10:30:00].000 F/art_apex(  356): Device is not fsverity-enabled.
+[2026-01-05 10:30:01].000 W/DLOG    (  369): sys.boot_completed=0, sys.system_ready=1
+[2026-01-05 10:30:02].000 W/ActivityManager(  601): Start proc 1200:com.xcr.singleapp.wpay/u0a101 for activity {com.xcr.singleapp.wpay/cloudBanking.singlePaymentApp.MainActivity}
+[2026-01-05 10:30:03].000 W/XINFOR  ( 1200): vQA_9.9.9 MainActivity.cs:583 App background image applied: /data/y.jpg
+[2026-01-05 10:30:04].000 W/XINFOR  ( 1200): vQA_9.9.9 DroidLogUploadSchedule.cs:141 Network event: Available
+[2026-01-05 10:30:05].000 W/ActivityManager(  601): Killing 1200:com.xcr.singleapp.wpay/u0a101 (adj 800): stop com.xcr.singleapp.wpay
+[2026-01-05 00:00:00].050 W/DLOG    (  370): sys.boot_completed=0, sys.system_ready=1
+[2026-01-05 00:00:01].000 W/ActivityManager(  602): Start proc 1300:com.xcr.singleapp.wpay/u0a101 for service {com.xcr.singleapp.wpay/cloudBanking.PaxSdk.DownloadParamService}
+[2026-01-05 00:00:02].000 W/XINFOR  ( 1300): vQA_9.9.9 MainActivity.cs:583 App background image applied: /data/z.jpg
+[2026-01-05 00:00:03].000 W/XINFOR  ( 1300): vQA_9.9.9 DroidLogUploadSchedule.cs:141 Network event: Available
+[2026-01-05 00:00:04].000 W/XINFOR  ( 1300): vQA_9.9.9 DroidLogUploadSchedule.cs:141 Network event: CapabilitiesChanged
+[2026-01-05 00:00:05].000 W/XINFOR  ( 1300): vQA_9.9.9 DroidLogUploadSchedule.cs:206 starting UploadLogs......

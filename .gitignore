@@ -1,0 +1,15 @@
+node_modules
+dist
+coverage
+*.local
+.DS_Store
+.vite
+
+# Real terminal dumps must never be committed. Only synthetic fixtures live in src/parser/__fixtures__.
+local/
+*.log
+*.zip
+!src/parser/__fixtures__/*.log
+
+# local tooling
+.claude/
