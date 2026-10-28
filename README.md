@@ -8,8 +8,6 @@ the crashes and exceptions that only the system logs.
 Everything runs in the browser. Log contents never leave the page; the only network calls are the
 ones you trigger on the *Get logs* screen.
 
-Live site: https://ugotechs.github.io/logviewer/ (published from `main` by GitHub Actions).
-
 ## Features
 
 - **Get logs**: drop the terminal's `{serial}_{yyyy-MM-dd_HHmmss_fff}.zip` (or the raw `.txt`) anywhere in
@@ -95,9 +93,8 @@ against real dumps with `npm run bench`; CI runs lint and the build.
 
 ## Deployment
 
-The build is a static `dist/` folder served from the domain root, so any static host works:
+The build is a static `dist/` folder served from the domain root. On Vercel: import the repository,
+framework preset *Vite*, build command `npm run build`, output directory `dist`; no environment variables
+are needed. To serve it under a sub-path instead, build with `VITE_BASE=/that-path/`.
 
-- **Vercel**: import the repository, framework preset *Vite*, build command `npm run build`, output
-  directory `dist`. No environment variables are needed.
-- **GitHub Pages**: pushes to `main` run lint and build with `VITE_BASE=/logviewer/`, then publish `dist/`.
-  The repository's Pages source must be set to "GitHub Actions" once.
+GitHub Actions runs lint and the build on pull requests and on pushes to `main`.
