@@ -93,8 +93,8 @@ against real dumps with `npm run bench`; CI runs lint and the build.
 
 ## Deployment
 
-The build is a static `dist/` folder served from the domain root. On Vercel: import the repository,
-framework preset *Vite*, build command `npm run build`, output directory `dist`; no environment variables
-are needed. To serve it under a sub-path instead, build with `VITE_BASE=/that-path/`.
+The build is a static `dist/` folder served from the domain root. Vercel reads `vercel.json` (Vite preset,
+`npm run build`, output `dist`); importing the repository is all it takes, no environment variables are
+needed. To serve the site under a sub-path instead, build with `VITE_BASE=/that-path/`.
 
 GitHub Actions runs lint and the build on pull requests and on pushes to `main`.
