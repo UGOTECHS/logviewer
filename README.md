@@ -84,15 +84,15 @@ site's origin and those headers.
 ```bash
 npm install
 npm run dev        # http://localhost:5173/logviewer/
-npm test           # parser unit tests (vitest)
+npm test           # unit tests (vitest)
 npm run lint
 npm run build      # type-check + static build into dist/
 npm run bench -- /path/to/dump.txt [package]   # parse a local dump and print counts and timings
 ```
 
-No log file of any kind is committed: real dumps may contain card-holder data in native lines, and the
-`.gitignore` excludes `*.log`, `*.zip`, `*.txt` and `local/`. The parser tests use synthetic logcat excerpts
-kept as string constants in `src/parser/__tests__/fixtures.ts`.
+No log file or log excerpt of any kind is committed: real dumps may contain card-holder data in native
+lines, and the `.gitignore` excludes `*.log`, `*.zip`, `*.txt` and `local/`. The automated tests therefore
+cover only the log-server client; the parser is checked by hand against real dumps with `npm run bench`.
 
 ## Deployment
 
