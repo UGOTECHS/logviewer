@@ -1,0 +1,15 @@
+node_modules
+dist
+coverage
+*.local
+.DS_Store
+.vite
+
+# No log file of any kind is committed: real dumps may contain card-holder data.
+local/
+*.log
+*.zip
+*.txt
+
+# local tooling
+.claude/
