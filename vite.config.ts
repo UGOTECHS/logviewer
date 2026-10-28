@@ -1,10 +1,10 @@
 import { defineConfig } from 'vitest/config'
 import react from '@vitejs/plugin-react'
 
-// GitHub Pages serves the project at https://ugotechs.github.io/logviewer/.
-// Set VITE_BASE=/ to build for a root-hosted deployment.
+// Built for the domain root (Vercel or any static host). The GitHub Pages workflow sets
+// VITE_BASE=/logviewer/ because Pages serves the project under that path.
 export default defineConfig({
-  base: process.env.VITE_BASE ?? '/logviewer/',
+  base: process.env.VITE_BASE ?? '/',
   plugins: [react()],
   worker: { format: 'es' },
   test: {

@@ -83,7 +83,7 @@ site's origin and those headers.
 
 ```bash
 npm install
-npm run dev        # http://localhost:5173/logviewer/
+npm run dev        # http://localhost:5173/
 npm run lint
 npm run build      # type-check + static build into dist/
 npm run bench -- /path/to/dump.txt [package]   # parse a local dump and print counts and timings
@@ -95,5 +95,9 @@ against real dumps with `npm run bench`; CI runs lint and the build.
 
 ## Deployment
 
-Pushes to `main` run lint, tests and build, then publish `dist/` to GitHub Pages. The repository's
-Pages source must be set to "GitHub Actions" once. Set `VITE_BASE=/` to build for a root-hosted server.
+The build is a static `dist/` folder served from the domain root, so any static host works:
+
+- **Vercel**: import the repository, framework preset *Vite*, build command `npm run build`, output
+  directory `dist`. No environment variables are needed.
+- **GitHub Pages**: pushes to `main` run lint and build with `VITE_BASE=/logviewer/`, then publish `dist/`.
+  The repository's Pages source must be set to "GitHub Actions" once.
